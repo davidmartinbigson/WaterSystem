@@ -35,7 +35,7 @@ const dictionaries = {
     email: 'Email address', password: 'Password', fullName: 'Your name', businessName: 'Business name', licenseKey: 'License key',
     emailPlaceholder: 'you@business.com', passwordPlaceholder: 'Enter your password', namePlaceholder: 'e.g. Hamza Khan', businessPlaceholder: 'e.g. BlueSpring Water Co.', keyPlaceholder: 'AQF-XXXX-XXXX-XXXX',
     remember: 'Remember me', forgot: 'Forgot password?', loginButton: 'Sign in to workspace', signupButton: 'Create account & activate', noAccount: 'New to AquaFlow?', haveAccount: 'Already have an account?', signUp: 'Create account', signIn: 'Sign in',
-    demoAccess: 'Try a demo workspace', demoOwner: 'Explore as water supplier', demoAdmin: 'Open master admin', demoCredentials: 'Demo access', ownerAccess: 'Supplier · owner@aquaflow.pk · demo1234', masterAccess: 'Master admin · admin@aquaflow.pk · AquaAdmin2026!',
+    demoAccess: 'Try a demo workspace', demoOwner: 'Explore as water supplier', demoAdmin: 'Open master admin', demoCredentials: 'Demo access', ownerAccess: 'Supplier · owner@aquaflow.pk · demo1234', masterAccess: 'Master admin · admin@aquaflow.pk · AquaAdmin2026!', availableDemoKey: 'Available demo key', useDemoKey: 'Use key', noAvailableKeys: 'No unused keys. Sign in as master admin to generate one.',
     masterHint: 'Master administrator', keyHint: 'Your key activates a subscription when you create your workspace.', backHome: 'Back to website',
     overview: 'Overview', orders: 'Orders', customers: 'Customers', deliveries: 'Deliveries & routes', inventory: 'Inventory', billing: 'Billing & expenses', reports: 'Reports', settings: 'Settings',
     workspace: 'WORKSPACE', operations: 'OPERATIONS', finance: 'FINANCE', system: 'SYSTEM',
@@ -77,7 +77,7 @@ const dictionaries = {
     footerLine: 'پانی کی ہر ڈیلیوری کو آسان بنانے کے لیے۔', footerProduct: 'پروڈکٹ', footerGetStarted: 'شروع کریں', footerSignIn: 'لاگ اِن',
     authWelcome: 'پانی، بہتر انتظام کے ساتھ۔', authAsideCopy: 'کسٹمر آرڈر سے لے کر آخری کین واپسی تک، اپنے ڈیلیوری بزنس کو آسانی سے چلائیں۔', authAsideFoot: 'کاروبار روانی سے چلائیں۔', authLoginTitle: 'واپس خوش آمدید', authLoginCopy: 'اپنے AquaFlow ورک اسپیس میں لاگ اِن کریں۔', authSignupTitle: 'اپنا ورک اسپیس بنائیں', authSignupCopy: 'تفصیلات اور ماسٹر ایڈمن کی لائسنس کی درج کریں۔',
     email: 'ای میل ایڈریس', password: 'پاس ورڈ', fullName: 'آپ کا نام', businessName: 'کاروبار کا نام', licenseKey: 'لائسنس کی', emailPlaceholder: 'you@business.com', passwordPlaceholder: 'پاس ورڈ درج کریں', namePlaceholder: 'مثلاً حمزہ خان', businessPlaceholder: 'مثلاً بلیو اسپرنگ واٹر', keyPlaceholder: 'AQF-XXXX-XXXX-XXXX', remember: 'مجھے یاد رکھیں', forgot: 'پاس ورڈ بھول گئے؟', loginButton: 'ورک اسپیس میں لاگ اِن', signupButton: 'اکاؤنٹ بنائیں اور فعال کریں', noAccount: 'AquaFlow پر نئے ہیں؟', haveAccount: 'پہلے سے اکاؤنٹ ہے؟', signUp: 'اکاؤنٹ بنائیں', signIn: 'لاگ اِن',
-    demoAccess: 'ڈیمو ورک اسپیس آزمائیں', demoOwner: 'واٹر سپلائر ڈیمو', demoAdmin: 'ماسٹر ایڈمن کھولیں', demoCredentials: 'ڈیمو لاگ اِن', ownerAccess: 'سپلائر · owner@aquaflow.pk · demo1234', masterAccess: 'ماسٹر ایڈمن · admin@aquaflow.pk · AquaAdmin2026!', masterHint: 'ماسٹر ایڈمنسٹریٹر', keyHint: 'اکاؤنٹ بناتے وقت یہ کی آپ کی سبسکرپشن فعال کرے گی۔', backHome: 'ویب سائٹ پر واپس',
+    demoAccess: 'ڈیمو ورک اسپیس آزمائیں', demoOwner: 'واٹر سپلائر ڈیمو', demoAdmin: 'ماسٹر ایڈمن کھولیں', demoCredentials: 'ڈیمو لاگ اِن', ownerAccess: 'سپلائر · owner@aquaflow.pk · demo1234', masterAccess: 'ماسٹر ایڈمن · admin@aquaflow.pk · AquaAdmin2026!', availableDemoKey: 'دستیاب ڈیمو کی', useDemoKey: 'کی استعمال کریں', noAvailableKeys: 'کوئی غیر استعمال شدہ کی نہیں۔ ماسٹر ایڈمن میں لاگ اِن کر کے نئی کی بنائیں۔', masterHint: 'ماسٹر ایڈمنسٹریٹر', keyHint: 'اکاؤنٹ بناتے وقت یہ کی آپ کی سبسکرپشن فعال کرے گی۔', backHome: 'ویب سائٹ پر واپس',
     overview: 'جائزہ', orders: 'آرڈرز', customers: 'کسٹمرز', deliveries: 'ڈیلیوری اور روٹس', inventory: 'انوینٹری', billing: 'بلنگ اور اخراجات', reports: 'رپورٹس', settings: 'ترتیبات', workspace: 'ورک اسپیس', operations: 'آپریشنز', finance: 'فنانس', system: 'سسٹم',
     hello: 'صبح بخیر', todaySummary: 'آج آپ کے واٹر بزنس میں کیا ہو رہا ہے، ایک نظر میں۔', todayDeliveries: 'آج کی ڈیلیوریز', monthlyRevenue: 'ماہانہ آمدن', activeCustomers: 'فعال کسٹمرز', cansCirculating: 'گردش میں کین', vsLastWeek: 'گزشتہ ہفتے سے', onSchedule: 'وقت پر', collectedThisMonth: 'اس ماہ وصولی', returnableCans: 'واپس آنے والے کین', newOrder: 'نیا آرڈر', addCustomer: 'کسٹمر شامل کریں', dispatchRoutes: 'روٹس دیکھیں', viewAll: 'سب دیکھیں', recentOrders: 'حالیہ آرڈرز', liveOperations: 'لائیو آپریشنز', revenueOverview: 'آمدن کا جائزہ', last7Days: 'گزشتہ 7 دن', routeProgress: 'روٹ کی پیش رفت', onTheRoad: 'راستے میں', stockNeedsAttention: 'اسٹاک پر توجہ دیں', allInventory: 'مکمل انوینٹری', lowStock: 'کم اسٹاک', filledCans: 'بھرے کین', emptyCans: 'خالی کین', returnedToday: 'آج واپس آئے', outForDelivery: 'ڈیلیوری کے لیے روانہ',
     search: 'تلاش کریں…', notifications: 'نوٹیفکیشنز', platformAdmin: 'پلیٹ فارم ایڈمن', demoWorkspace: 'ڈیمو ورک اسپیس', signOut: 'لاگ آؤٹ', switchLanguage: 'English',
@@ -107,6 +107,18 @@ function useStoredState(key, fallback) {
   useEffect(() => {
     try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage can be unavailable */ }
   }, [key, value]);
+  useEffect(() => {
+    const syncFromAnotherTab = (event) => {
+      if (event.storageArea !== localStorage || event.key !== key) return;
+      if (event.newValue === null) {
+        setValue(fallback);
+        return;
+      }
+      try { setValue(JSON.parse(event.newValue)); } catch { setValue(fallback); }
+    };
+    window.addEventListener('storage', syncFromAnotherTab);
+    return () => window.removeEventListener('storage', syncFromAnotherTab);
+  }, [key]);
   return [value, setValue];
 }
 
@@ -117,6 +129,7 @@ const shortDate = (value) => {
   const date = new Date(`${value}T12:00:00`);
   return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString('en-PK', { day: 'numeric', month: 'short', year: 'numeric' });
 };
+const normalizeLicenseCode = (value) => String(value || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
 const statusKey = (status) => ({ Delivered: 'delivered', Pending: 'pending', 'On the way': 'onTheWay', Active: 'active', Available: 'available', Expired: 'expired', Revoked: 'revoked' }[status] || status);
 const group = (value) => String(value).toLocaleString('en-PK');
 const nextLicenseCode = () => {
@@ -206,8 +219,8 @@ function App() {
     const cleanEmail = email.trim().toLowerCase();
     if (!name.trim() || !business.trim() || !cleanEmail || password.length < 6 || !licenseKey.trim()) return { ok: false, error: t('missingFields') };
     if (accounts.some((account) => account.email.toLowerCase() === cleanEmail) || cleanEmail === 'owner@aquaflow.pk' || cleanEmail === 'admin@aquaflow.pk') return { ok: false, error: t('emailExists') };
-    const normalizedKey = licenseKey.replace(/\s/g, '').toUpperCase();
-    const key = licenses.find((entry) => entry.code.replace(/\s/g, '').toUpperCase() === normalizedKey && entry.status === 'Available');
+    const normalizedKey = normalizeLicenseCode(licenseKey);
+    const key = licenses.find((entry) => normalizeLicenseCode(entry.code) === normalizedKey && entry.status === 'Available');
     if (!key) return { ok: false, error: t('keyInvalid') };
     const expiry = relativeISO(Number(key.days) || 30);
     const createdAccount = { name: name.trim(), business: business.trim(), email: cleanEmail, password, license: key.code };
@@ -233,7 +246,7 @@ function App() {
     return <BusinessDashboard session={session} setSession={setSession} language={language} setLanguage={setLanguage} t={t} orders={orders} setOrders={setOrders} customers={customers} setCustomers={setCustomers} inventory={inventory} setInventory={setInventory} expenses={expenses} setExpenses={setExpenses} routes={routes} onLogout={logout} />;
   }
   if (screen === 'auth') {
-    return <AuthPage t={t} language={language} setLanguage={setLanguage} initialMode={authMode} onBack={() => setScreen('landing')} onLogin={login} onSignup={signup} onDemoOwner={() => demoLogin('owner')} onDemoAdmin={() => demoLogin('master')} />;
+    return <AuthPage t={t} language={language} setLanguage={setLanguage} initialMode={authMode} availableKeys={licenses.filter((entry) => entry.status === 'Available')} onBack={() => setScreen('landing')} onLogin={login} onSignup={signup} onDemoOwner={() => demoLogin('owner')} onDemoAdmin={() => demoLogin('master')} />;
   }
   return <LandingPage t={t} language={language} setLanguage={setLanguage} onLogin={() => openAuth('login')} onSignup={() => openAuth('signup')} onDemo={() => demoLogin('owner')} />;
 }
@@ -313,9 +326,9 @@ function FeatureCard({ icon: Icon, number, title, copy, className }) {
   return <article className={`feature-card ${className}`}><div className="feature-card-top"><span className="feature-icon"><Icon size={20} /></span><span className="feature-number">{number}</span></div><h3>{title}</h3><p>{copy}</p><span className="feature-arrow"><ArrowUpRight size={16} /></span></article>;
 }
 
-function AuthPage({ t, language, setLanguage, initialMode, onBack, onLogin, onSignup, onDemoOwner, onDemoAdmin }) {
+function AuthPage({ t, language, setLanguage, initialMode, availableKeys = [], onBack, onLogin, onSignup, onDemoOwner, onDemoAdmin }) {
   const [mode, setMode] = useState(initialMode || 'login');
-  const [form, setForm] = useState({ name: '', business: '', email: '', password: '', licenseKey: '' });
+  const [form, setForm] = useState({ name: '', business: '', email: '', password: '', licenseKey: initialMode === 'signup' ? availableKeys[0]?.code || '' : '' });
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const update = (key, value) => setForm((previous) => ({ ...previous, [key]: value }));
@@ -324,7 +337,11 @@ function AuthPage({ t, language, setLanguage, initialMode, onBack, onLogin, onSi
     const result = mode === 'login' ? onLogin(form) : onSignup(form);
     if (!result?.ok) setError(result?.error || t('missingFields'));
   };
-  const toggleMode = (next) => { setError(''); setMode(next); };
+  const toggleMode = (next) => {
+    setError('');
+    if (next === 'signup' && !form.licenseKey && availableKeys[0]) update('licenseKey', availableKeys[0].code);
+    setMode(next);
+  };
   return (
     <div className="auth-page">
       <header className="auth-topbar"><Brand onClick={onBack} /><div className="auth-top-actions"><LanguageButton language={language} setLanguage={setLanguage} /><button className="back-site" type="button" onClick={onBack}><ArrowLeft size={15} />{t('backHome')}</button></div></header>
@@ -335,7 +352,7 @@ function AuthPage({ t, language, setLanguage, initialMode, onBack, onLogin, onSi
             {mode === 'signup' && <><FormField label={t('fullName')} icon={Users}><input value={form.name} onChange={(event) => update('name', event.target.value)} placeholder={t('namePlaceholder')} required /></FormField><FormField label={t('businessName')} icon={Building2}><input value={form.business} onChange={(event) => update('business', event.target.value)} placeholder={t('businessPlaceholder')} required /></FormField></>}
             <FormField label={t('email')} icon={Globe2}><input type="email" value={form.email} onChange={(event) => update('email', event.target.value)} placeholder={t('emailPlaceholder')} required autoComplete="email" /></FormField>
             <FormField label={t('password')} icon={ShieldCheck}><div className="password-wrap"><input type={showPassword ? 'text' : 'password'} value={form.password} onChange={(event) => update('password', event.target.value)} placeholder={t('passwordPlaceholder')} required minLength={6} autoComplete={mode === 'login' ? 'current-password' : 'new-password'} /><button className="password-toggle" type="button" onClick={() => setShowPassword(!showPassword)} aria-label="Show password">{showPassword ? <EyeOff size={16} /> : <Eye size={16} />}</button></div></FormField>
-            {mode === 'login' ? <div className="form-row"><label className="check-label"><input type="checkbox" defaultChecked />{t('remember')}</label><button className="text-button" type="button" onClick={() => setError(t('noKey'))}>{t('forgot')}</button></div> : <FormField label={t('licenseKey')} icon={ShieldCheck} hint={t('keyHint')}><input value={form.licenseKey} onChange={(event) => update('licenseKey', event.target.value.toUpperCase())} placeholder={t('keyPlaceholder')} required autoCapitalize="characters" /></FormField>}
+            {mode === 'login' ? <div className="form-row"><label className="check-label"><input type="checkbox" defaultChecked />{t('remember')}</label><button className="text-button" type="button" onClick={() => setError(t('noKey'))}>{t('forgot')}</button></div> : <><FormField label={t('licenseKey')} icon={ShieldCheck} hint={t('keyHint')}><input value={form.licenseKey} onChange={(event) => update('licenseKey', event.target.value.toUpperCase())} placeholder={t('keyPlaceholder')} required autoCapitalize="characters" /></FormField><div className="available-key-helper">{availableKeys[0] ? <><span><small>{t('availableDemoKey')}</small><code>{availableKeys[0].code}</code></span><button type="button" onClick={() => update('licenseKey', availableKeys[0].code)}>{t('useDemoKey')}</button></> : <small>{t('noAvailableKeys')}</small>}</div></>}
             {error && <div className="form-error"><X size={15} />{error}</div>}
             <button className="button button-primary button-full" type="submit">{mode === 'login' ? t('loginButton') : t('signupButton')}<ArrowRight size={16} /></button>
           </form>

@@ -344,3 +344,11 @@ html[dir='rtl'] .status-pill { direction: rtl; }
 .volume-summary-detail { display: flex; flex: 1; flex-direction: column; gap: 3px; margin-left: 10px; padding-left: 14px; border-left: 1px solid #e4eee7; }.volume-summary-detail strong { color: #506e64; font-size: 8px; }.volume-summary-detail span { color: #94a59c; font-size: 7px; }.volume-conversion-note { padding: 6px 8px; color: #7d9990; border-radius: 7px; background: #edf7f0; font-size: 7px; white-space: nowrap; }
 html[dir='rtl'] .volume-summary-strip, html[dir='rtl'] .volume-summary-detail { direction: rtl; }.volume-summary-detail { text-align: left; }
 @media (max-width: 650px) { .volume-summary-strip { gap: 8px; padding: 8px; }.volume-summary-icon { width: 27px; height: 27px; }.volume-summary-main small { font-size: 6px; }.volume-summary-main strong { font-size: 11px; }.volume-summary-detail { margin-left: 0; padding-left: 8px; }.volume-summary-detail strong { font-size: 7px; }.volume-summary-detail span { max-width: 135px; font-size: 6px; line-height: 1.4; }.volume-conversion-note { max-width: 90px; padding: 5px; font-size: 6px; white-space: normal; line-height: 1.35; } }
+
+.available-key-helper { display: flex; align-items: center; justify-content: space-between; gap: 9px; padding: 9px 10px; border: 1px solid #dceee5; border-radius: 8px; background: #f4faf6; }
+.available-key-helper > span { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.available-key-helper small { color: #789189; font-size: 7px; line-height: 1.55; }
+.available-key-helper code { overflow: hidden; color: #3e7365; font-family: 'DM Sans',sans-serif; font-size: 8px; letter-spacing: .35px; white-space: nowrap; text-overflow: ellipsis; }
+.available-key-helper button { flex: none; padding: 7px 9px; color: #137f6e; border: 1px solid #cce6d9; border-radius: 7px; background: white; font-size: 8px; font-weight: 800; cursor: pointer; }
+.available-key-helper button:hover { border-color: #67b9a0; background: #ebf8ef; }
+html[dir='rtl'] .available-key-helper { direction: rtl; }
