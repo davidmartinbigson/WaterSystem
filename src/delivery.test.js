@@ -15,11 +15,12 @@ test('delivery balances include the prior amount, order amount, payment and bott
 });
 
 test('English report includes supplier, money, returns, query window and channel URL', () => {
+  const reportComms = { ...initialComms, whatsappChannel: 'https://wa.me/channel/example' };
   const report = buildDeliveryReport({
     id: 'ORD-1', date: '2026-10-16', cans: 3, amount: 420, paymentReceived: 500,
     previousBalance: 280, emptyReturned: 2, bottleBalance: 6, totalBalance: 200,
-  }, { name: 'Amina Khan' }, 'Karachi Pure Water', initialComms, 'en');
-  for (const expected of ['Karachi Pure Water', 'Amina Khan', 'Payment Received = Rs 500', 'Previous Balance = Rs 280', 'Bottles Deliver = 3', 'Bottles Empty = 2', 'Balance Bottles = 6', 'Total Bal Amount = Rs 200', '48 hours', initialComms.whatsappChannel]) {
+  }, { name: 'Amina Khan' }, 'Karachi Pure Water', reportComms, 'en');
+  for (const expected of ['Karachi Pure Water', 'Amina Khan', 'Payment Received = Rs 500', 'Previous Balance = Rs 280', 'Bottles Deliver = 3', 'Bottles Empty = 2', 'Balance Bottles = 6', 'Total Bal Amount = Rs 200', '48 hours', reportComms.whatsappChannel]) {
     assert.ok(report.includes(expected), `report is missing: ${expected}`);
   }
 });

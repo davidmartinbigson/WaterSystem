@@ -1,0 +1,33 @@
+name: AquaFlow Next.js checks
+
+on:
+  push:
+    branches:
+      - arena/550a2f83-watersystem
+  pull_request:
+    branches:
+      - main
+      - arena/550a2f83-watersystem
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+      - name: Build Next.js app
+        run: npm run build
