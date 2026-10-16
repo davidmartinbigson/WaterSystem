@@ -16,14 +16,14 @@ export const initialOrders = [
 ];
 
 export const initialCustomers = [
-  { id: 'CUS-0821', name: 'Zara Ahmed', phone: '0301 248 5091', address: 'Clifton, Block 2', route: 'Clifton · R1', cans: 4, balance: 0, frequency: 'Every 2 days', since: 'Apr 2024' },
-  { id: 'CUS-0820', name: 'Ali Raza', phone: '0321 774 6252', address: 'DHA Phase 6', route: 'DHA · R2', cans: 2, balance: 280, frequency: 'Daily', since: 'Jun 2023' },
-  { id: 'CUS-0819', name: 'Bilal Residence', phone: '0300 992 1077', address: 'PECHS Block 6', route: 'PECHS · R3', cans: 6, balance: 840, frequency: 'Weekly', since: 'Jan 2025' },
-  { id: 'CUS-0818', name: 'Green Leaf Cafe', phone: '0333 468 1902', address: 'Bahadurabad', route: 'Gulshan · R4', cans: 12, balance: 0, frequency: 'Daily', since: 'Aug 2022' },
-  { id: 'CUS-0817', name: 'Mariam Iqbal', phone: '0315 605 2124', address: 'Gulshan-e-Iqbal, 13-D', route: 'Gulshan · R4', cans: 3, balance: 0, frequency: 'Every 3 days', since: 'Sep 2024' },
-  { id: 'CUS-0816', name: 'The Fern Hotel', phone: '021 3582 1010', address: 'Clifton, Block 5', route: 'Clifton · R1', cans: 18, balance: 2520, frequency: 'Daily', since: 'Feb 2021' },
-  { id: 'CUS-0815', name: 'Usman Siddiqui', phone: '0302 761 8840', address: 'North Nazimabad, Block H', route: 'North · R5', cans: 2, balance: 0, frequency: 'Weekly', since: 'Nov 2024' },
-  { id: 'CUS-0814', name: 'Olive Garden Office', phone: '021 3531 6400', address: 'Shahrah-e-Faisal', route: 'PECHS · R3', cans: 10, balance: 1400, frequency: 'Twice a week', since: 'Mar 2023' },
+  { id: 'CUS-0821', name: 'Zara Ahmed', phone: '0301 248 5091', email: 'zara.ahmed@example.com', address: 'Clifton, Block 2', route: 'Clifton · R1', cans: 4, bottleBalance: 9, balance: 0, frequency: 'Every 2 days', since: 'Apr 2024' },
+  { id: 'CUS-0820', name: 'Ali Raza', phone: '0321 774 6252', email: 'ali.raza@example.com', address: 'DHA Phase 6', route: 'DHA · R2', cans: 2, bottleBalance: 4, balance: 280, frequency: 'Daily', since: 'Jun 2023' },
+  { id: 'CUS-0819', name: 'Bilal Residence', phone: '0300 992 1077', email: 'bilal.residence@example.com', address: 'PECHS Block 6', route: 'PECHS · R3', cans: 6, bottleBalance: 10, balance: 840, frequency: 'Weekly', since: 'Jan 2025' },
+  { id: 'CUS-0818', name: 'Green Leaf Cafe', phone: '0333 468 1902', email: 'accounts.greenleaf@example.com', address: 'Bahadurabad', route: 'Gulshan · R4', cans: 12, bottleBalance: 20, balance: 0, frequency: 'Daily', since: 'Aug 2022' },
+  { id: 'CUS-0817', name: 'Mariam Iqbal', phone: '0315 605 2124', email: 'mariam.iqbal@example.com', address: 'Gulshan-e-Iqbal, 13-D', route: 'Gulshan · R4', cans: 3, bottleBalance: 5, balance: 0, frequency: 'Every 3 days', since: 'Sep 2024' },
+  { id: 'CUS-0816', name: 'The Fern Hotel', phone: '021 3582 1010', email: 'accounts@fernhotel.example.com', address: 'Clifton, Block 5', route: 'Clifton · R1', cans: 18, bottleBalance: 32, balance: 2520, frequency: 'Daily', since: 'Feb 2021' },
+  { id: 'CUS-0815', name: 'Usman Siddiqui', phone: '0302 761 8840', email: 'usman.siddiqui@example.com', address: 'North Nazimabad, Block H', route: 'North · R5', cans: 2, bottleBalance: 3, balance: 0, frequency: 'Weekly', since: 'Nov 2024' },
+  { id: 'CUS-0814', name: 'Olive Garden Office', phone: '021 3531 6400', email: 'procurement.olive@example.com', address: 'Shahrah-e-Faisal', route: 'PECHS · R3', cans: 10, bottleBalance: 15, balance: 1400, frequency: 'Twice a week', since: 'Mar 2023' },
 ];
 
 export const initialInventory = [
@@ -47,6 +47,14 @@ export const initialLicenses = [
   { id: 'LIC-1005', code: 'AQF-4B8W-6K1M-3C9F', plan: 'Custom · 45 days', days: 45, status: 'Expired', business: 'FreshSip Traders', email: 'info@freshsip.pk', createdAt: daysAgo(123), expiresAt: '2026-06-28' },
   { id: 'LIC-1004', code: 'AQF-2D9L-7R4H-5P1K', plan: 'Monthly', days: 30, status: 'Available', business: 'Invite · Lahore', email: '', createdAt: daysAgo(8), expiresAt: '' },
 ];
+
+export const initialPricing = { mode: 'per-can', pricePerCan: 140, pricePerLitre: 8, bottlePackPrice: 420, bottleCartonPrice: 360 };
+
+export const initialComms = {
+  whatsappChannel: 'https://whatsapp.com/channel/0029VbH5ZZ0LKZ5hUUZzA3E',
+  contactPhone: '',
+  queryHours: 48,
+};
 
 export const initialRoutes = [
   { id: 'R1', name: 'Clifton & Seaview', zone: 'South Karachi', driver: 'Naveed Akhtar', vehicle: 'KHI-4186', stops: 24, done: 16, cans: 72, status: 'In progress', color: 'mint' },
